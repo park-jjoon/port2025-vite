@@ -33,6 +33,7 @@
     -webkit-text-size-adjust: 100%;
 }
 
+/* 모바일 */
 @media (max-width: 800px) {
     :root {
         font-size: 14px;
