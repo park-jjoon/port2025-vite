@@ -17,7 +17,7 @@ export function port(){
             start:"top 100px",
             end: "+=2500",
             pin: true,
-            markers: true,
+            //markers: true,
             scrub: 1,
             aniticipatePin: 1
         }
