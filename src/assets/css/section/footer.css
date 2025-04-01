@@ -1,3 +1,100 @@
+
+
+
+
 #footer {
-    
+    font-family: var(--mainKor-font);
+
+}
+
+.footer__inner {
+
+}
+.footer__text {
+    font-size: 12px;
+    text-transform: uppercase;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    display: flex;
+    justify-content: space-between;
+}
+.footer__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 16px;
+}
+.footer__info .left {
+    width: 40%;
+}
+.footer__info .left .title {
+    border-top: 2px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    padding: 15px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: url(../../img/arrow.svg) no-repeat right 15px center;
+    transition: all 0.3s;
+}
+.footer__info .left .title:hover {
+    background-color: var(--black400);
+    padding-left: 10px;
+    border-color: transparent;
+}
+.footer__info .left .desc {
+    font-size: 12px;
+    padding-top: 15px;
+}
+.footer__info .right {
+    width: 50%;
+}
+.footer__info .right h3 {
+    border-top: 2px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    font-size: 10px;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.footer__info .right ul > li + li {
+    border-top: 1px solid var(--black);
+}
+.footer__info .right ul > li > a {
+    display: inline-block;
+    padding: 14px 0;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.footer__info .right ul > li em {
+    font-size: 14px;
+    padding-left: 10px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.footer__info .right ul > li:hover em {
+    opacity: 1;
+    font-size: 12px;
+}
+.footer__right {
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .footer__info {
+        flex-direction: column;
+    }
+    .footer__info .left {
+        width: 100%;
+    }
+    .footer__info .left .desc {
+        margin-bottom: 40px;
+    }
+    .footer__info .right {
+        width: 100%;
+    }
 }
